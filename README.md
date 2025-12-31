@@ -1,4 +1,4 @@
-# University Application Platform - Frontend
+# University Application Platform - Verical Slice
 
 A modern React application that allows students to browse, filter, and apply to universities worldwide based on their academic profiles.
 
