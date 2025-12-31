@@ -1,4 +1,4 @@
-# University Application Platform - Verical Slice
+# University Application Platform - Vertical Slice
 
 A modern React application that allows students to browse, filter, and apply to universities worldwide based on their academic profiles.
 
