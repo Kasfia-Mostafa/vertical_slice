@@ -1,16 +1,125 @@
-# React + Vite
+# University Application Platform - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application that allows students to browse, filter, and apply to universities worldwide based on their academic profiles.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Deployed Application**: [https://vertical-slice.vercel.app](https://vertical-slice.vercel.app)
 
-## React Compiler
+## 🔗 Related Repositories
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Backend Repository**: [https://github.com/Kasfia-Mostafa/vertical_slice_backend](https://github.com/Kasfia-Mostafa/vertical_slice_backend)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Smart Filtering**: Filter universities by country, degree level, and maximum tuition fee
+- **Eligibility Checking**: Real-time eligibility validation based on GPA and IELTS scores
+- **Quick Apply**: Two-step application process for eligible universities
+- **University Comparison**: Side-by-side comparison of up to 3 universities
+- **Responsive Design**: Optimized for desktop and mobile devices
+- **Animated UI**: Smooth animations using Framer Motion
+- **Toast Notifications**: User-friendly feedback with react-hot-toast
+
+## 🛠️ Tech Stack
+
+- **React** - UI library
+- **Vite** - Build tool and development server
+- **React Router** - Client-side routing and data loading
+- **Framer Motion** - Animation library
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Hot Toast** - Toast notification library
+- **Lucide React** - Icon library
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Kasfia-Mostafa/vertical_slice.git
+
+# Navigate to the frontend directory
+cd vertical_slice/frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+## 🔧 Configuration
+
+Create a `.env` file in the root directory (if needed):
+
+```env
+VITE_API_URL=http://localhost:5000
+```
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🏗️ Project Structure
+
+```
+frontend/
+├── public/
+│   └── image/          # Static images
+├── src/
+│   ├── Components/
+│   │   └── Pages/
+│   │       ├── ErrorPage/
+│   │       ├── HomePage/
+│   │       │   └── HeroSection/
+│   │       │       ├── ComparisonSection.jsx
+│   │       │       ├── Navbar.jsx
+│   │       │       └── UniversityFilterSection.jsx
+│   │       └── Root/
+│   ├── Routes/
+│   │   └── routes.jsx  # Route configuration
+│   ├── assets/         # Static assets
+│   ├── index.css       # Global styles
+│   └── main.jsx        # Application entry point
+├── index.html
+├── package.json
+├── vite.config.js
+└── tailwind.config.js
+```
+
+## 🎨 Key Components
+
+### UniversityFilterSection
+Main component featuring:
+- University grid with filtering
+- Academic profile input (GPA, IELTS)
+- Eligibility validation
+- Quick apply modal
+
+### ComparisonSection
+Modal component for side-by-side university comparison displaying:
+- GPA requirements
+- IELTS requirements
+- Annual tuition fees
+
+## 🌐 API Integration
+
+The frontend communicates with the backend API for:
+- Fetching university data
+- Submitting applications
+- Filtering results
+
+Default API endpoint: `http://localhost:5000/api`
+
+## 🚀 Deployment
+
+Deployed on **Vercel** with automatic deployments from the main branch.
+
+## 📄 License
+
+This project is part of a university application platform.
+
+---
+
+Built with React + Vite
