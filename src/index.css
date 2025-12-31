@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-celadon: #d8f3dc;
+  --color-mutedteal: #8fb996;
+  --color-muted: #709775;
+  --color-huntergreen: #415d43;
+  --color-carbonblack: #111d13;
+  --color-mint: #74c69d;
+  --color-teagreen: #849F79;
+  --color-porcelain: #fffcf7;
+
+  --font-oxanium: "Oxanium", sans-serif;
+  --font-press: "Press Start 2P", system-ui;
+}
